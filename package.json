@@ -9,7 +9,8 @@
     "dev": "yarn clear && concurrently \"cd frontend && yarn dev\" \"cd backend && yarn develop\"",
     "seed": "cd backend && yarn strapi import -f ../seed-data.tar.gz",
     "export": "cd backend && yarn strapi export --no-encrypt -f ../seed-data",
-    "repo:upstream": "git fetch upstream && git merge upstream/main"
+    "repo:upstream": "git fetch upstream && git merge upstream/main",
+    "start": "yarn clear && concurrently \"cd frontend && yarn start\" \"cd backend && yarn start\""
   },
   "dependencies": {
     "concurrently": "^8.2.2",
